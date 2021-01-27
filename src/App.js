@@ -19,6 +19,8 @@ export default class App extends Component {
       enableButton = true;
     }
 
+    console.log("update Memo length check: ", event.target.value.length > 0);
+
     this.setState(
       {
         newMemo: event.target.value,
@@ -42,6 +44,8 @@ export default class App extends Component {
     );*/
     
     let { newMemo, memoList } = this.state;
+
+    console.log("addMemo length check: ", newMemo.length > 0);
 
     if (newMemo.length > 0) {
       memoList.push(newMemo);
