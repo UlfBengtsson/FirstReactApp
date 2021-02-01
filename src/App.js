@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import MyFirstComponet from "./componets/MyFirstComponet";
 import Memo from "./componets/Memo";
+import WikiAPI from "./componets/WikiAPI";
 import './App.css';
 
 export default class App extends Component {
@@ -90,7 +91,11 @@ export default class App extends Component {
 
           <Memo memoList={this.state.memoList} />
         </section>
-  
+        <hr />
+        <section>
+          <WikiAPI />
+        </section>
+
       </div>
     );
   } 
